@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍺 Green Hops ChatBot - Cervecería Artesanal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #2E8B57 0%, #228B22 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .beer-icon {
+            font-size: 4em;
+            margin: 20px 0;
+        }
+        
+        .access-link {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #000;
+            padding: 20px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: bold;
+            display: inline-block;
+            margin: 20px;
+            box-shadow: 0 4px 15px rgba(255,215,0,0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .access-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255,215,0,0.5);
+        }
+        
+        .info-box {
+            background: rgba(255,255,255,0.15);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .beer-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .beer-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #FFD700;
+        }
+        
+        .contact-info {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .warning {
+            background: rgba(255,0,0,0.2);
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="beer-icon">🍺</div>
+        <h1>Green Hops ChatBot</h1>
+        <p style="font-size: 1.2em; margin-bottom: 30px;">
+            Cervecería Artesanal - Chía, Cundinamarca, Colombia
+        </p>
+        
+        <!-- ENLACES DE ACCESO AL CHATBOT -->
+        <div style="margin: 40px 0;">
+            <h2>🌍 Acceso al ChatBot</h2>
+            <a href="http://localhost:8501" class="access-link" target="_blank">
+                💻 Acceso Local
+            </a>
+            <a href="http://192.168.0.103:8501" class="access-link" target="_blank">
+                📱 Acceso Red WiFi
+            </a>
+        </div>
+        
+        <div class="info-box">
+            <h3>🍻 Nuestras Cervezas Artesanales</h3>
+            <div class="beer-list">
+                <div class="beer-item">
+                    <strong>SUE</strong><br>
+                    American Pale Ale<br>
+                    <em>Sabor refrescante</em>
+                </div>
+                <div class="beer-item">
+                    <strong>CHÍA</strong><br>
+                    Porter Oscura<br>
+                    <em>Café tostado y chocolate</em>
+                </div>
+                <div class="beer-item">
+                    <strong>NENCATACOA</strong><br>
+                    Irish Red<br>
+                    <em>Sabor a caramelo</em>
+                </div>
+                <div class="beer-item">
+                    <strong>IPA LIMÓN Y COCO</strong><br>
+                    India Pale Ale<br>
+                    <em>Cítricos refrescantes</em>
+                </div>
+                <div class="beer-item">
+                    <strong>DOCE UVAS</strong><br>
+                    Grape Ale Dorada<br>
+                    <em>Sabores frutales únicos</em>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-info">
+            <h3>📞 Información de Contacto</h3>
+            <p><strong>📍 Ubicación:</strong> Chía, Cundinamarca, Colombia</p>
+            <p><strong>📱 WhatsApp:</strong> 3012802229</p>
+            <p><strong>📸 Instagram:</strong> <a href="https://www.instagram.com/greenhopsbeer" target="_blank" style="color: #FFD700;">@greenhopsbeer</a></p>
+            <p><strong>🗺️ Google Maps:</strong> <a href="https://maps.app.goo.gl/CbuBREg6N5ghWwuL9" target="_blank" style="color: #FFD700;">Ver ubicación</a></p>
+            <p><strong>🕒 Horarios:</strong> Fines de semana, 3:00 PM - 12:00 AM</p>
+            <p><strong>🐕 Pet Friendly:</strong> ¡Bienvenidas las mascotas!</p>
+        </div>
+        
+        <div class="info-box">
+            <h3>🤖 Sobre el ChatBot</h3>
+            <p>Nuestro ChatBot puede ayudarte con:</p>
+            <ul style="text-align: left; display: inline-block;">
+                <li>Información sobre nuestras cervezas</li>
+                <li>Recomendaciones de maridajes</li>
+                <li>Horarios y ubicación</li>
+                <li>Reservas y contacto</li>
+                <li>Eventos y catas</li>
+            </ul>
+        </div>
+        
+        <div class="warning">
+            ⚠️ <strong>Consumo Responsable:</strong> Solo para mayores de edad. 
+            El consumo excesivo de alcohol es perjudicial para la salud.
+        </div>
+        
+        <div style="margin-top: 30px; font-size: 0.9em; opacity: 0.8;">
+            <p>Desarrollado por Mery Anne Escobar Hitscherich - Maestra Cervecera</p>
+            <p>Green Hops © 2025 - Cervecería Artesanal</p>
+        </div>
+    </div>
+</body>
+</html>
